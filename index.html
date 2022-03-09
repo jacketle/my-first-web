@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>第一个完整网站</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {  font-family: Arial;
+ 	 	padding: 10px;
+  		background: #99FFFF;
+  		
+  		}
+  		
+ /* 页眉/Blog 标题 */ 		
+ .header {
+  padding: 30px;
+  text-align: center;
+  background: #99FFFF;
+} 	
+
+/* 设置上导航栏的样式 */
+.topnav {
+  overflow: hidden;
+  list-style: none;
+  background-color: #0066FF;
+}
+
+/* 设置 topnav 链接的样式 */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  font-family: "Microsoft Yahei";
+  text-decoration: none;
+}
+/* 改变鼠标悬停时的颜色 */
+.topnav a:hover {
+  background-color: #0066FF;
+  color: black;
+}	
+
+/* 创建两个不相等的彼此并排的浮动列 */
+/* 左列 */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* 右列 */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* 伪图像 */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* 为文章添加卡片效果 */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* 清除列之后的浮动 */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* 响应式布局 - 当屏幕的宽度小于 800 像素时，使两列堆叠而不是并排 */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* 响应式布局 - 当屏幕的宽度小于 400 像素时，使导航链接堆叠而不是并排 */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+/* 页脚 */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+ </style>
+ </head>
+
+<body>
+
+<div class="header">
+  <h1>Hello,This is My World！</h1>
+</div>
+
+<div class="topnav">
+  <a href="#">我的日常</a>
+  <a href="#">兴趣爱好</a>
+  <a href="#">我的大学</a>
+  <a href="#">生活节奏</a>
+  <a href="#" style="float:right">欢迎讨论</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>我的日常</h2>
+      <h5>摸鱼🐟</h5>
+      <img src="2.jpg" width="300" height="300" />
+      <p>我们所度过的每个平凡的日常，也许就是连续发生的奇迹。</p>
+      <p>我的日常挺单调的，没有过多的惊喜，也没有很悲惨的经历，平平淡淡。虽说每天都过得很潇洒，但补作业时是真的狼狈。
+      每天肝肝代码，上上课，赶下作业，也挺好的不是吗？</p>
+    </div>
+    
+    <div class="card">
+      <h2>我的大学</h2>
+      <h5>佛科院</h5>
+      <img src="3.jpg" width="460" height="218" />
+      <p>明德博学，自强有为</p>
+      <p>很多人憧憬这所大学，也有很多人讨厌他，但无论如何，这都是我的大学啊！很幸运我能过来到这里，遇到一群有趣的同学和老师，没有他们的鼓励和陪伴，也就没有现在的我。
+      现在我以学校为荣,将来学校以我为荣！</p>
+	</div>
+  </div>
+ <div class="rightcolumn">
+    <div class="card">
+      <h2>兴趣爱好</h2>
+      <img src="4.jpg" width="250" height="100" />
+      <p>打游戏(lol,老头环等)，听歌，看电影动漫，想去旅游，探索世界。</p>
+    </div>
+    <div class="card">
+      <h3>生活节奏</h3>
+      <img src="5.jpg" width="250" height="250" />
+      <img src="6.jpg" width="256" height="256" />
+    </div>
+    <div class="card">
+      <h3>加入学习</h3>
+      <p>做一个有知识有情怀的IT人</p>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <h2>欢迎联系我</h2>
+  免责声明：“YITB.COM”的资讯页面文章、图片、音频、视频等稿件均为自媒体人、第三方机构发布或转载。如稿件涉及版权等问题，请与我们联系删除或处理。稿件内容仅为传递更多信息之目的，不代表本网观点，亦不代表本网站赞同其观点或证实其内容的真实性，更不对您的投资构成建议。我们不鼓励任何形式的投资行为、购买使用行为
+ </div>
+
+</body>
+</html>
